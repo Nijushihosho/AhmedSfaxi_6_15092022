@@ -35,6 +35,11 @@
         });
     };
 
+    async function getPhotographers (){
+        await fetch("/data/photographers.json")
+        return {photographers};
+        console.log();
+    }
     async function init() {
         // Récupère les datas des photographes
         const { photographers } = await getPhotographers();
